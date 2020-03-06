@@ -10,11 +10,9 @@ inputs:
   IGNORE_PACKAGES:
     description: "List of packages to ignore"
     required: false
-    default: []
   IGNORE_FILES:
     description: "List of files to ignore"
     required: false
-    default: []
 
 runs:
   using: 'node12'
