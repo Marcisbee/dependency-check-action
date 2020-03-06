@@ -10,5 +10,3 @@ jobs:
       - uses: .
         with:
           PATH: "."
-          IGNORE_PACKAGES: []
-          IGNORE_FILES: []
