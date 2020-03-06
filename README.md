@@ -1,6 +1,9 @@
 # Dependency Checker Action
 This action checks if JavaScript dependencies are used but missing from package.json file.
 
+Example of failed check:
+![image](https://user-images.githubusercontent.com/16621507/76079779-13d69680-5fae-11ea-8a07-6b7fdb26d896.png)
+
 ## Inputs
 ### `PATH`
 
