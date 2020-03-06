@@ -13,7 +13,11 @@ const main = async () => {
     ignoreFiles: IGNORE_FILES,
   };
 
-  await check(PATH, options);
+  try {
+    await check(PATH, options);
+  } catch(e) {
+    throw e;
+  }
 
   console.log(
     '\x1b[42m\x1b[30m%s\x1b[0m',

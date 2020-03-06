@@ -40,6 +40,8 @@ async function check(projectPath, options) {
     if (critical.length) {
       process.exit(1);
     }
+  }).catch(() => {
+    process.exit(1);
   });
 }
 
