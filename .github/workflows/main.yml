@@ -1,0 +1,14 @@
+name: Missing Dependencies
+on: push
+
+jobs:
+  build:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: .
+        with:
+          PATH: "."
+          IGNORE_PACKAGES: []
+          IGNORE_FILES: []

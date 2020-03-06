@@ -1,0 +1,25 @@
+name: "Dependency Checker"
+description: "Checks if some dependencies are used but not found in pacakge.json"
+author: "marcisbergmanis@gmail.com"
+
+inputs:
+  PATH:
+    description: "Relative path to project"
+    required: false
+    default: ""
+  IGNORE_PACKAGES:
+    description: "List of packages to ignore"
+    required: false
+    default: []
+  IGNORE_FILES:
+    description: "List of files to ignore"
+    required: false
+    default: []
+
+runs:
+  using: 'node12'
+  main: 'src/index.js'
+
+branding:
+  icon: "mic"
+  color: "purple"
