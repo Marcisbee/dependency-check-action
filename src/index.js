@@ -16,7 +16,8 @@ const main = async () => {
   try {
     await check(PATH, options);
   } catch(e) {
-    throw e;
+    console.log(e && e.message);
+    process.exit(1);
   }
 
   console.log(
