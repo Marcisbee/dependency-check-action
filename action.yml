@@ -19,5 +19,5 @@ runs:
   main: 'src/index.js'
 
 branding:
-  icon: "mic"
-  color: "purple"
+  icon: "package"
+  color: "yellow"
